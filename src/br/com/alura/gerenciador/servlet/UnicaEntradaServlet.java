@@ -24,7 +24,6 @@ public class UnicaEntradaServlet extends HttpServlet {
 		String paramAcao = request.getParameter("acao");
 
 		if (paramAcao.equals("ListaEmpresas")) {
-			System.out.println("Listando empresas");
 
 			ListaEmpresas acao = new ListaEmpresas();
 			acao.executa(request, response);

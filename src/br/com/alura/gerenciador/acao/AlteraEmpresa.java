@@ -16,13 +16,15 @@ public class AlteraEmpresa {
 
 	public void executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		System.out.println("Ação Alterando empresa") ;
+		
 
 		String nomeEmpresa = request.getParameter("nome");
 		String paramDataEmpresa = request.getParameter("data");
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		String paramId = request.getParameter("id");
 		Integer id = Integer.valueOf(paramId);
+		
+		System.out.println("Ação Alterando empresa" + id) ;
 		
 		Date dataAbertura = null;
 		try {
