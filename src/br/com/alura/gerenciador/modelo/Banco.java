@@ -1,5 +1,6 @@
 package br.com.alura.gerenciador.modelo;
 
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -7,6 +8,7 @@ import java.util.List;
 public class Banco {
 	
 	private static List<Empresa> lista = new ArrayList<>();
+	private static List<Usuario> listaUsuarios = new ArrayList<>();
 	private static Integer chaveSequencial = 1;
 	
 	static {
@@ -18,6 +20,19 @@ public class Banco {
 		empresa2.setNome("Caelum");
 		lista.add(empresa);
 		lista.add(empresa2);
+		
+		Usuario u1 = new Usuario();
+		u1.setLogin("gedan");
+		u1.setSenha("online");
+		
+		
+		Usuario u2 = new Usuario();
+		u2.setLogin("debora");
+		u2.setSenha("online");
+		
+		
+		listaUsuarios.add(u1);
+		listaUsuarios.add(u2);
 	}
 
 	public void adiciona(Empresa empresa) {

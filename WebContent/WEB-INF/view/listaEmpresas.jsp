@@ -29,6 +29,8 @@
 		</c:forEach>
 	</ul>
 	
+	<a href="/gerenciador/entrada?acao=NovaEmpresaForm"><button>Adicionar Empresa</button></a>
+	
 </body>
 </html>
 
