@@ -11,12 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import br.com.alura.gerenciador.acao.Acao;
-import br.com.alura.gerenciador.acao.AlteraEmpresa;
-import br.com.alura.gerenciador.acao.ListaEmpresas;
-import br.com.alura.gerenciador.acao.MostraEmpresa;
-import br.com.alura.gerenciador.acao.NovaEmpresa;
-import br.com.alura.gerenciador.acao.NovaEmpresaForm;
-import br.com.alura.gerenciador.acao.RemoveEmpresa;
 
 @WebServlet("/entrada")
 public class UnicaEntradaServlet extends HttpServlet {

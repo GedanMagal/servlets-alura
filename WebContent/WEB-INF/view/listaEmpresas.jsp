@@ -11,6 +11,8 @@
 <title>Java Standard Taglib</title>
 </head>
 <body>
+	
+	<c:import url="logout-parcial.jsp"/>
 
 	Usuario logado: ${usuarioLogado.login}
 	<br>
@@ -34,7 +36,7 @@
 		</c:forEach>
 	</ul>
 	
-	<a href="/gerenciador/entrada?acao=NovaEmpresaForm"><button>Adicionar Empresa</button></a>
+	<a href="/gerenciador/entrada?acao=NovaEmpresaForm">Adicionar Empresa</a>
 	
 </body>
 </html>
