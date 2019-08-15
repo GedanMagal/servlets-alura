@@ -31,10 +31,8 @@ public class Login implements Acao {
 			return "redirect:entrada?acao=ListaEmpresas";
 		}else {
 			return "redirect:entrada?acao=LoginForm";
+			
 		}
-		
-		
-		
 			
 	}
 
